@@ -1,0 +1,1043 @@
+<html>
+
+<head>
+    <title>Gold Necklaces</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        *.btn {
+            cursor: pointer;
+        }
+
+        .background {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -999;
+        }
+
+        .background .back-img img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .back-overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+        }
+
+        /*NAVIGATION BAR CSS START*/
+
+        .navi {
+            background-color: transparent;
+            width: 86%;
+            margin: auto;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            height: auto;
+            padding: 15 0 15 0;
+            background-color: rgb(0, 0, 0, 0.1);
+        }
+
+        .left-img {
+            width: 15%;
+        }
+
+        .right {
+            height: 25px;
+            width: 77%;
+            /* position: absolute; */
+            padding: 15 25 15 0;
+            text-align: right;
+        }
+
+        .right ul a li {
+            list-style: none;
+            display: inline-table;
+            color: white;
+            padding-bottom: 10px;
+            margin: 0 10 0 10;
+            transition: 0.5s;
+        }
+
+        .right ul a li:hover {
+            color: #e2b741;
+            border-bottom: 1px solid #e2b741;
+        }
+
+        .navbar .right-img {
+            position: absolute;
+            right: 10%;
+            padding: 5 20 0 0;
+        }
+
+        .navbar .right-img:hover {
+            cursor: pointer;
+        }
+
+        .navbar .right-img .ing {
+            /* position: absolute; */
+        }
+
+        .navbar .right-img .ing {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1 {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1:hover {
+            /* cursor: pointer; */
+            display: none;
+            cursor: pointer;
+        }
+
+        /*NAVIGATION BAR CSS ENDS*/
+
+        /*SCROLL TO TOP BUTTON CSS*/
+        .upward-top-button {
+            background-color: #E2B741;
+            width: 50px;
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 100%;
+            height: 50px;
+
+        }
+
+        .upward-top-button p {
+            padding-top: 10;
+        }
+
+        .top-button {
+            /* position: absolute; */
+            bottom: 10px;
+            right: 21px;
+            position: fixed;
+        }
+
+        .top-button a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        /*SCROLL TO TOP BUTTON CSS END*/
+        /*MAIN CONTAINER CSS STARTS*/
+
+        .main-container {
+            background-color: white;
+            width: 86%;
+            /* height: 500%; */
+            z-index: -50;
+            margin: auto;
+            /* padding: 30 0 0 0; */
+        }
+
+        .main-section {
+            background-color: rgb(255, 255, 255);
+            padding: 0 20 0 20;
+        }
+
+        /*HEADING TEXT CSS*/
+
+        .heading-txt {
+            font-size: 50;
+            padding: 20 0 20 0;
+        }
+
+        .search-result-txt {
+            font-size: 20;
+            margin-bottom: 20;
+        }
+
+        /************************FIRST SECTION CSS START********************************/
+
+        .first-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .first-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .first-sec-pic {
+            /* width: 25%;
+            margin: 0 20 0 0; */
+            background-repeat: no-repeat;
+            height: 75%;
+            background-position: 50% 50%;
+            background-size: cover;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5); */
+
+        }
+
+        .first-sec-pic-one {
+            background-image: url(images/photo/8.webp);
+        }
+
+        .first-sec-pic-two {
+            background-image: url(images/photo/11.webp);
+        }
+
+        .first-sec-pic-three {
+            background-image: url(images/photo/12.webp);
+        }
+
+        .first-sec-pic-four {
+            background-image: url(images/photo/13.webp);
+        }
+
+        .first-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .first-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .first-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .first-sec-whole:hover .first-sec-pic-one {
+            background-image: url(images/photo/8-1.webp);
+        }
+
+        .first-sec-whole:hover .first-sec-pic-two {
+            background-image: url(images/photo/11-1.webp);
+        }
+
+        .first-sec-whole:hover .first-sec-pic-three {
+            background-image: url(images/photo/12-1.webp);
+        }
+
+        .first-sec-whole:hover .first-sec-pic-four {
+            background-image: url(images/photo/13-1.webp);
+        }
+
+        .first-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FIRST SECTION CSS ENDS********************************/
+
+        /********************GENERALIZED HOVER SHOP PICTURE FOR ALL SECTION********************/
+
+        .hover-shop-pic {
+            background-image: url(images/yellow.png);
+            background-repeat: no-repeat;
+            height: 50;
+            width: 0;
+            background-color: rgba(54, 54, 54, 0.9);
+            background-position: 50% 50%;
+            /* background-size: cover; */
+            position: absolute;
+            border-radius: 0% 30% 0% 30%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+            margin: 5 0 0 5;
+            transition: 0.5s;
+        }
+
+        .hover-shop-pic:hover {
+            background-image: url(images/white.png);
+            cursor: pointer;
+        }
+
+        /********************************GENERALIZED HOVER SHOP PICTURE FOR ALL SECTION ENDS********************/
+
+
+        /************************SECOND SECTION CSS START********************************/
+
+        .second-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .second-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .second-sec-pic {
+            /* width: 25%;
+            margin: 0 20 0 0; */
+            background-repeat: no-repeat;
+            height: 75%;
+            background-position: 50% 50%;
+            background-size: cover;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5); */
+
+        }
+
+        .second-sec-pic-one {
+            background-image: url(images/photo/15.webp);
+        }
+
+        .second-sec-pic-two {
+            background-image: url(images/photo/9.webp);
+        }
+
+        .second-sec-pic-three {
+            background-image: url(images/photo/17.webp);
+        }
+
+        .second-sec-pic-four {
+            background-image: url(images/photo/18.webp);
+        }
+
+        .second-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .second-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .second-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .second-sec-whole:hover .second-sec-pic-one {
+            background-image: url(images/photo/15-1.webp);
+        }
+
+        .second-sec-whole:hover .second-sec-pic-two {
+            background-image: url(images/photo/9-1.webp);
+        }
+
+        .second-sec-whole:hover .second-sec-pic-three {
+            background-image: url(images/photo/17-1.webp);
+        }
+
+        .second-sec-whole:hover .second-sec-pic-four {
+            background-image: url(images/photo/18-1.webp);
+        }
+
+        .second-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************SECOND SECTION CSS ENDS********************************/
+
+        /************************THIRD SECTION CSS START********************************/
+
+        .third-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .third-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .third-sec-pic {
+            /* width: 25%;
+            margin: 0 20 0 0; */
+            background-repeat: no-repeat;
+            height: 75%;
+            background-position: 50% 50%;
+            background-size: cover;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5); */
+
+        }
+
+        .third-sec-pic-one {
+            background-image: url(images/photo/19.webp);
+        }
+
+        .third-sec-pic-two {
+            background-image: url(images/photo/20.webp);
+        }
+
+        .third-sec-pic-three {
+            background-image: url(images/photo/10.webp);
+        }
+
+        .third-sec-pic-four {
+            background-image: url(images/photo/22.webp);
+        }
+
+        .third-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .third-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .third-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .third-sec-whole:hover .third-sec-pic-one {
+            background-image: url(images/photo/19-1.webp);
+        }
+
+        .third-sec-whole:hover .third-sec-pic-two {
+            background-image: url(images/photo/20-1.webp);
+        }
+
+        .third-sec-whole:hover .third-sec-pic-three {
+            background-image: url(images/photo/10-1.webp);
+        }
+
+        .third-sec-whole:hover .third-sec-pic-four {
+            background-image: url(images/photo/22-1.webp);
+        }
+
+        .third-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************THIRD SECTION CSS ENDS********************************/
+
+         /************************FOURTH SECTION CSS START********************************/
+
+         .fourth-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .fourth-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .fourth-sec-pic {
+            /* width: 25%;
+            margin: 0 20 0 0; */
+            background-repeat: no-repeat;
+            height: 75%;
+            background-position: 50% 50%;
+            background-size: cover;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5); */
+
+        }
+
+        .fourth-sec-pic-one {
+            background-image: url(images/photo/24.webp);
+        }
+
+        .fourth-sec-pic-two {
+            background-image: url(images/photo/25.webp);
+        }
+
+        .fourth-sec-pic-three {
+            background-image: url(images/photo/26.webp);
+        }
+
+        .fourth-sec-pic-four {
+            background-image: url(images/photo/28.webp);
+        }
+
+        .fourth-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .fourth-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .fourth-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .fourth-sec-whole:hover .fourth-sec-pic-one {
+            background-image: url(images/photo/24-1.webp);
+        }
+
+        .fourth-sec-whole:hover .fourth-sec-pic-two {
+            background-image: url(images/photo/25-1.webp);
+        }
+
+        .fourth-sec-whole:hover .fourth-sec-pic-three {
+            background-image: url(images/photo/26-1.webp);
+        }
+
+        .fourth-sec-whole:hover .fourth-sec-pic-four {
+            background-image: url(images/photo/28-1.webp);
+        }
+
+        .fourth-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FOURTH SECTION CSS ENDS********************************/
+
+        /************************FIFTH SECTION CSS START********************************/
+
+        .fifth-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .fifth-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .fifth-sec-pic {
+            /* width: 25%;
+            margin: 0 20 0 0; */
+            background-repeat: no-repeat;
+            height: 75%;
+            background-position: 50% 50%;
+            background-size: cover;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5); */
+
+        }
+
+        .fifth-sec-pic-one {
+            background-image: url(images/photo/23.webp);
+        }
+
+        .fifth-sec-pic-two {
+            background-image: url(images/photo/27.webp);
+        }
+
+        .fifth-sec-pic-three {
+            background-image: url(images/photo/29.webp);
+        }
+
+        .fifth-sec-pic-four {
+            background-image: url(images/photo/30.webp);
+        }
+
+        .fifth-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .fifth-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .fifth-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .fifth-sec-whole:hover .fifth-sec-pic-one {
+            background-image: url(images/photo/23-1.webp);
+        }
+
+        .fifth-sec-whole:hover .fifth-sec-pic-two {
+            background-image: url(images/photo/27-1.webp);
+        }
+
+        .fifth-sec-whole:hover .fifth-sec-pic-three {
+            background-image: url(images/photo/29-1.webp);
+        }
+
+        .fifth-sec-whole:hover .fifth-sec-pic-four {
+            background-image: url(images/photo/30-1.webp);
+        }
+
+        .fifth-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FIFTH SECTION CSS ENDS********************************/
+
+        /*****************************FOOTER AND COPYRIGHT SECTION START************************/
+
+         .foot {
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 86%;
+            height: 40%;
+            z-index: -50;
+            margin: auto;
+            padding: 100 0 0 0;
+            display: flex;
+            /* padding: 30 0 0 0; */
+        }
+
+        .about-us {
+            /* float: left; */
+            width: 20%;
+            padding: 0 20 0 50;
+        }
+
+        .about-us-body {
+            padding: 20 0 0 0;
+            font-size: 15;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul {
+            padding: 12px 0 0 18px;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li {
+            padding: 12px 0 0 0;
+        }
+
+        .foot-div-body ul li a {
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .hori-line {
+            width: 0;
+            height: 195px;
+            border-left: 1px solid rgb(168, 168, 168);
+            /* float: left; */
+        }
+
+        .follow-us,
+        .whats-hot,
+        .company {
+            padding: 0 0 0 50;
+            width: 20%;
+            /* float: left; */
+        }
+
+        .foot-head {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .copy-right {
+            display: block;
+            width: 86%;
+            height: 100;
+            margin: auto;
+            text-align: center;
+            color: rgb(168, 168, 168);
+        }
+
+        .copy-right-txt {
+            padding: 50 0 0 0;
+            display: inline-block;
+        }
+
+         /****************************FOOTER AND COPYRIGHT SECTION ENDS****************************/
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="back-img">
+            <img src="../images/background.jpg" alt="">
+        </div>
+        <div class="back-overlay">
+        </div>
+    </div>
+    <div class="navi">
+        <div class="navbar">
+            <div class="left-img">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>CAMPAIGN</li>
+                    </a>
+                    <a href="#">
+                        <li style="color:rgb(226, 183, 65)">PRODUCTS</li>
+                    </a>
+                    <a href="#">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="right-img">
+                <a href="#">
+                    <img class="ing" src="../images/white.png" alt="">
+                </a>
+                <a>
+                    <img class="ing1" src="../images/yellow.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="top-button">
+        <a href="#">
+            <div class="upward-top-button">
+                <p>^</p>
+            </div>
+        </a>
+    </div>
+    <div class="main-container">
+        <div class="main-section">
+            <div class="heading-txt">Gold Necklace</div>
+            <div class="search-result-txt">
+                <p>Showing all 20 results</p>
+            </div>
+            <div class="first-section">
+
+                <div class="first-sec-whole">
+                    <a href="first-sec-one.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="first-sec-pic first-sec-pic-one"></div>
+                        <div class="first-sec-txt-one">Attract Dual Light Necklace<br />
+                            ₹99,999</div>
+                    </a>
+                </div>
+
+
+                <div class="first-sec-whole">
+                    <a href="first-sec-two.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="first-sec-pic first-sec-pic-two"></div>
+                        <div class="first-sec-txt-one">Divinity All-Around Necklace<br />
+                            ₹30,000</div>
+                    </a>
+                </div>
+
+
+                <div class="first-sec-whole">
+                    <a href="first-sec-three.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="first-sec-pic first-sec-pic-three"></div>
+                        <div class="first-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="first-sec-whole">
+                    <a href="first-sec-four.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="first-sec-pic first-sec-pic-four"></div>
+                        <div class="first-sec-txt-one">Darling Large Necklace
+                            <br />
+                            ₹50,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="second-section">
+
+                <div class="second-sec-whole">
+                    <a href="second-sec-one.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="second-sec-pic second-sec-pic-one"></div>
+                        <div class="second-sec-txt-one">Attract Dual Light Necklace<br />
+                            ₹99,999</div>
+                    </a>
+                </div>
+
+
+                <div class="second-sec-whole">
+                    <a href="second-sec-two.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="second-sec-pic second-sec-pic-two"></div>
+                        <div class="second-sec-txt-one">Divinity All-Around Necklace<br />
+                            ₹30,000</div>
+                    </a>
+                </div>
+
+
+                <div class="second-sec-whole">
+                    <a href="second-sec-three.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="second-sec-pic second-sec-pic-three"></div>
+                        <div class="second-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="second-sec-whole">
+                    <a href="second-sec-four.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="second-sec-pic second-sec-pic-four"></div>
+                        <div class="second-sec-txt-one">Darling Large Necklace
+                            <br />
+                            ₹50,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="third-section">
+
+                <div class="third-sec-whole">
+                    <a href="third-sec-one.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="third-sec-pic third-sec-pic-one"></div>
+                        <div class="third-sec-txt-one">Attract Dual Light Necklace<br />
+                            ₹99,999</div>
+                    </a>
+                </div>
+
+
+                <div class="third-sec-whole">
+                    <a href="third-sec-two.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="third-sec-pic third-sec-pic-two"></div>
+                        <div class="third-sec-txt-one">Divinity All-Around Necklace<br />
+                            ₹30,000</div>
+                    </a>
+                </div>
+
+
+                <div class="third-sec-whole">
+                    <a href="third-sec-three.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="third-sec-pic third-sec-pic-three"></div>
+                        <div class="third-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="third-sec-whole">
+                    <a href="third-sec-four.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="third-sec-pic third-sec-pic-four"></div>
+                        <div class="third-sec-txt-one">Darling Large Necklace
+                            <br />
+                            ₹50,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="fourth-section">
+
+                <div class="fourth-sec-whole">
+                    <a href="fourth-sec-one.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fourth-sec-pic fourth-sec-pic-one"></div>
+                        <div class="fourth-sec-txt-one">Attract Dual Light Necklace<br />
+                            ₹99,999</div>
+                    </a>
+                </div>
+
+
+                <div class="fourth-sec-whole">
+                    <a href="fourth-sec-two.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fourth-sec-pic fourth-sec-pic-two"></div>
+                        <div class="fourth-sec-txt-one">Divinity All-Around Necklace<br />
+                            ₹30,000</div>
+                    </a>
+                </div>
+
+
+                <div class="fourth-sec-whole">
+                    <a href="fourth-sec-three.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fourth-sec-pic fourth-sec-pic-three"></div>
+                        <div class="fourth-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="fourth-sec-whole">
+                    <a href="fourth-sec-four.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fourth-sec-pic fourth-sec-pic-four"></div>
+                        <div class="fourth-sec-txt-one">Darling Large Necklace
+                            <br />
+                            ₹50,000
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="fifth-section">
+
+                <div class="fifth-sec-whole">
+                    <a href="fifth-sec-one.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fifth-sec-pic fifth-sec-pic-one"></div>
+                        <div class="fifth-sec-txt-one">Attract Dual Light Necklace<br />
+                            ₹99,999</div>
+                    </a>
+                </div>
+
+
+                <div class="fifth-sec-whole">
+                    <a href="fifth-sec-two.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fifth-sec-pic fifth-sec-pic-two"></div>
+                        <div class="fifth-sec-txt-one">Divinity All-Around Necklace<br />
+                            ₹30,000</div>
+                    </a>
+                </div>
+
+
+                <div class="fifth-sec-whole">
+                    <a href="fifth-sec-three.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fifth-sec-pic fifth-sec-pic-three"></div>
+                        <div class="fifth-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="fifth-sec-whole">
+                    <a href="fifth-sec-four.html">
+                        <div class="hover-shop-pic"></div>
+                        <div class="fifth-sec-pic fifth-sec-pic-four"></div>
+                        <div class="fifth-sec-txt-one">Creativity Necklace<br />
+                            <s style="color:rgba(54, 54, 54, 0.5)">₹70,000</s> ₹60,000
+                        </div>
+                    </a>
+
+                </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="foot">
+        <div class="about-us">
+            <div class="foot-head">ABOUT US</div>
+            <div class="about-us-body">Since 1906, DIVA has been the must-peruse news hotspot for shrewd
+                gems experts. From market investigation to developing gems patterns, we cover the critical business
+                subjects fundamental to the regular accomplishment of adornments experts around the world.</div>
+        </div>
+        <div class="hori-line"></div>
+        <div class="follow-us">
+            <div class="foot-head">FOLLOW US</div>
+            <div class="foot-div-body">
+                <ul>
+                    <li><a href="#" data-original-title="SPRING">SPRING COLLECTION</a></li>
+                    <li><a href="#">TRENDING</a></li>
+                    <li><a href="#">BEST SELERS</a></li>
+                    <li><a href="#">DISCOUNT VOWCHER</a></li>
+                    <li><a href="#">NEW ARRIVAL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hori-line"></div>
+        <div class="whats-hot">
+            <div class="foot-head">WHATS HOT</div>
+            <div class="foot-div-body">
+                <ul>
+                    <li><a href="#">SPRING COLLECTION</a></li>
+                    <li><a href="#">TRENDING</a></li>
+                    <li><a href="#">BEST SELERS</a></li>
+                    <li><a href="#">DISCOUNT VOWCHER</a></li>
+                    <li><a href="#">NEW ARRIVAL</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hori-line"></div>
+        <div class="company">
+            <div class="foot-head">WHATS HOT</div>
+            <div class="foot-div-body">
+                <ul>
+                    <li><a href="#">SPRING COLLECTION</a></li>
+                    <li><a href="#">TRENDING</a></li>
+                    <li><a href="#">BEST SELERS</a></li>
+                    <li><a href="#">DISCOUNT VOWCHER</a></li>
+                    <li><a href="#">NEW ARRIVAL</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy-right">
+    <div class="copy-right-txt">
+        <p>Copyright &#169; All Rights Reserved</p>
+    </div>
+</div>
+
+</html>
